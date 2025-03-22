@@ -1,0 +1,15 @@
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\bin\Debug\lab_5.exe.config
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\bin\Debug\lab_5.exe
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\bin\Debug\lab_5.pdb
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.csproj.AssemblyReference.cache
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\MainWindow.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\App.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5_MarkupCompile.cache
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5_MarkupCompile.lref
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\MainWindow.baml
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.g.resources
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.Properties.Resources.resources
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.csproj.GenerateResource.cache
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.csproj.CoreCompileInputs.cache
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.exe
+D:\se666\vis_prog\VIS_IN_GIT\lab_5\obj\Debug\lab_5.pdb
