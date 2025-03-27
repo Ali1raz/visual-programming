@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace hello_wpf.Properties
+namespace lab_6.Properties
 {
 
 
