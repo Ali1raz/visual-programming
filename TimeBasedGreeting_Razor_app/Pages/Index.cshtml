@@ -1,0 +1,11 @@
+﻿@page
+@model TimeBasedGreeting_Razor_app.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Greeting</h1>
+    <p>Built by Ali Raza 118</p>
+    <p>Current Time: @Model.CurrentTime</p>
+</div>
