@@ -1,0 +1,12 @@
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\mid_proj.csproj.AssemblyReference.cache
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\DashboardWindow.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\Loginwindow.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\RegisterWindow.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\App.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\mid_proj_MarkupCompile.cache
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\mid_proj_MarkupCompile.lref
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\DashboardView.baml
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\LoginView.baml
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\DashboardView.g.cs
+D:\se666\vis_prog\VIS_IN_GIT\mid_proj\obj\Debug\net8.0-windows\Views\LoginView.g.cs

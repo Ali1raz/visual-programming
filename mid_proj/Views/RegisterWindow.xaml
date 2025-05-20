@@ -1,0 +1,39 @@
+﻿<Window x:Class="mid_proj.Views.RegisterWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mid_proj.Views" xmlns:vm="clr-namespace:mid_proj.ViewModels" xmlns:helpers="clr-namespace:mid_proj.Helpers" xmlns:converters="clr-namespace:mid_proj.Converters" mc:Ignorable="d"
+        Title="Register" Height="500" Width="400"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource BaseWindowStyle}">
+
+    <Window.DataContext>
+        <vm:RegisterViewModel/>
+    </Window.DataContext>
+
+    <Border Padding="30" Background="{StaticResource PrimaryBackgroundBrush}">
+        <Grid>
+            <StackPanel VerticalAlignment="Center" IsEnabled="{Binding IsRegisterBusy, Converter={StaticResource InverseBooleanConverter}}">
+
+                <TextBlock Text="REGISTER" FontSize="24" FontWeight="Bold" Foreground="{StaticResource PrimaryAccentBrush}" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+                <TextBlock Text="{Binding ErrorMessage}" Foreground="{StaticResource ErrorForegroundBrush}" FontWeight="SemiBold" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,10" MinHeight="30" VerticalAlignment="Top" Visibility="{Binding ErrorMessage, Converter={StaticResource NullOrEmptyToVisibilityConverter}}"/>
+
+                <TextBlock Text="Username" Style="{StaticResource LabelStyle}"/>
+                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Password" Style="{StaticResource LabelStyle}"/>
+                <PasswordBox helpers:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Confirm Password" Style="{StaticResource LabelStyle}"/>
+                <PasswordBox helpers:PasswordBoxHelper.BoundPassword="{Binding ConfirmPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <Button Content="Register" Style="{StaticResource PrimaryButtonStyle}" Command="{Binding RegisterCommand}"/>
+
+                <Button Content="Already have an account? Login here" Style="{StaticResource LinkButtonStyle}" Margin="0,15,0,0" Command="{Binding NavigateToLoginCommand}"/>
+            </StackPanel>
+
+            <ProgressBar IsIndeterminate="True" Height="5" VerticalAlignment="Top" Margin="-30,-30,-30,0" Visibility="{Binding IsRegisterBusy, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        </Grid>
+    </Border>
+</Window>
