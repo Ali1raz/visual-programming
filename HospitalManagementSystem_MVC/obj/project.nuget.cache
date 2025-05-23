@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "6OKAeUP9LVs=",
+  "success": false,
+  "projectFilePath": "D:\\__SE___6\\vis_prog\\VIS_IN_GIT\\HospitalManagementSystem_MVC\\HospitalManagementSystem_MVC.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\r\n  No such host is known. (api.nuget.org:443)\r\n  No such host is known.",
+      "libraryId": "Microsoft.EntityFrameworkCore"
+    }
+  ]
+}
