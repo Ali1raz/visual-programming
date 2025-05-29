@@ -1,0 +1,72 @@
+@model IEnumerable<MvcMovie.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movie Collection";
+}
+
+<div class="container">
+    <h1 class="display-4 mb-4">Movie Collection</h1>
+
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <form asp-action="Index" method="get" class="d-flex gap-2">
+                <input type="text" name="searchString" class="form-control" placeholder="Search movies..." />
+                <select name="genre" class="form-select" style="width: 200px;">
+                    <option value="">All Genres</option>
+                    @foreach (var genre in (List<string>)ViewData["Genres"])
+                    {
+                        <option value="@genre">@genre</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+        <div class="col-md-4 text-end">
+            <a asp-action="Create" class="btn btn-success">
+                <i class="bi bi-plus-circle"></i> Add New Movie
+            </a>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.Genre</h6>
+                        <p class="card-text">
+                            <strong>Release Date:</strong> @item.ReleaseDate.ToString("MMM dd, yyyy")<br/>
+                            <strong>Price:</strong> @item.Price.ToString("C")
+                        </p>
+                        <div class="btn-group">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">
+                                <i class="bi bi-pencil"></i> Edit
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm text-white">
+                                <i class="bi bi-info-circle"></i> Details
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Keep selected genre after search
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const genre = urlParams.get('genre');
+            if (genre) {
+                document.querySelector('select[name="genre"]').value = genre;
+            }
+        });
+    </script>
+}
