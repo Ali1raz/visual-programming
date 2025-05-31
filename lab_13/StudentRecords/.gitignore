@@ -1,0 +1,133 @@
+# Student Records Project .gitignore
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Visual Studio / Visual Studio Code
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pdb
+*.opendb
+*.VC.db
+.localhistory/
+.history/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+.idea_modules/
+*.iws
+
+# Java / Maven / Gradle
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.hprof
+*.jfr
+target/
+.gradle/
+build/
+out/
+.mvn/wrapper/maven-wrapper.jar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.env
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Logs and backups
+*.log
+*.bak
+*.swp
+*~
+._*
+Backup*/
+*.orig
+
+# Config files that might contain sensitive information
+appsettings.*.json
+!appsettings.example.json
+Web.*.config
+!Web.example.config
+*.pubxml
+*.pubxml.user
+
+# Miscellaneous
+.DS_Store
+[Tt]emp/
+*.tmp
+*.temp
+*.cache
+
