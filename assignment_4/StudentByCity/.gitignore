@@ -1,0 +1,58 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Rider settings
+.idea/
+
+# Build artifacts
+*.dll
+*.exe
+*.app
+*.pdb
+
+# Auto-generated files
+*.cache
+*.log
+
+# Visual Studio build folders
+TestResults/
+*.vspscc
+*.vssscc
+.vs/
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Backup & temporary files
+*~
+*.bak
+*.tmp
+
+# Others
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# Publish output
+publish/
+
+# Windows image thumbnails
+Thumbs.db
+
+# JetBrains Rider
+.idea/
